@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply text-gray-800;
   }
@@ -32,5 +35,14 @@
   }
   .section-gap {
     @apply space-y-8;
+  }
+  .nav-link {
+    @apply relative transition-all duration-300;
+  }
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
   }
 } 
