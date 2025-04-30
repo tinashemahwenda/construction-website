@@ -1,0 +1,16 @@
+{
+  "name": "kuvaka-construction",
+  "version": "1.0.0",
+  "description": "Kuvaka Construction Company Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/main.css -o ./styles/output.css --watch",
+    "build": "npx tailwindcss -i ./styles/main.css -o ./styles/output.css --minify"
+  },
+  "keywords": ["construction", "website", "tailwind"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+} 
